@@ -1,8 +1,13 @@
 @import "variables";
 
 * {
-    font-family: "Inconsolata";
-    line-height: normal;
+    // font-family: "Inconsolata";
+    font-family: 'Roboto Mono', 'Courier', 'Helvetica', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #4B4B4B;
+    line-height: 25px;
+    -webkit-font-smoothing: antialiased;
 }
 .container {
     max-width: $max-width;
@@ -15,6 +20,11 @@
     @extend %link-default;
 }
 #content {
+    // a[href^="http://julian.digital"]
+
+    a[href*="github"] {
+        @extend %link-zouying;
+    }
     a {
         @extend %link-default;
     }
